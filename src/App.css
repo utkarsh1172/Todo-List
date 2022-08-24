@@ -37,16 +37,17 @@
 input{
   width: 100%;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
   
 }
-button{
+.todoForm>button{
   width: 15%;
   font-weight: bold;
   border-radius: 5px;
   border: none;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .allTodos{
@@ -70,4 +71,26 @@ button{
 
 .todoText{
   flex: 1;
+}
+.singleTodo>button{
+  width: 15%;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin: 0 2px;
+  padding: 2px;
+}
+
+.singleTodo>button:nth-child(2){
+  width: 10%;
+}
+
+.singleTodo>button:hover{
+  background: #B6B6B4;
+  cursor: pointer;
+}
+
+.todoForm>button:hover{
+  background-color: #B6B6B4;
+  transition: 0.3s;
 }
